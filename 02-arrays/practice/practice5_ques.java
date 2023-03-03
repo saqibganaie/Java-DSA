@@ -29,7 +29,7 @@ public class practice5_ques {
         return maxElem;
     }
 
-    // Q3. Reverse arr
+    // Q3. Reverse arr elements
     static int[] reverseArr(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
