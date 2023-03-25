@@ -8,7 +8,7 @@ public class practice4_ques {
         // System.out.println(getFloor(arr, 44));
         // char[] letters = { 'c', 'f', 'j' };
         // System.out.println(nextGreatesLetter(letters, 'g'));
-        System.out.println(ans(arr, 100));
+        // System.out.println(ans(arr, 100));
 
     }
 
