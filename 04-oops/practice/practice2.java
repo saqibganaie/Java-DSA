@@ -13,11 +13,15 @@ public class practice2 {
         System.out.println(car1.numOfTires);
         // car1 = new Car(5); // not allowed because car1 is final
 
-        Car myCar;
-        for (int i = 0; i < 1000000000; i++) { // this will put load on mem and force java to do garbage collection
-                                               // which in turn will run the finalize statement
-            myCar = new Car();
-        }
+        // Car myCar;
+        // for (int i = 0; i < 1000000000; i++) { // this will put load on mem and force
+        // java to do garbage collection
+        // // which in turn will run the finalize statement
+        // myCar = new Car();
+        // }
+
+        // Parent p = new Parent();
+        // Child ch = new Child();
     }
 
     // here Integer is used to create an object of Integer class and we know objects
@@ -53,5 +57,17 @@ class Car {
     protected void finalize() throws Throwable {
         // TODO Auto-generated method stub
         System.out.println("Car destroyed");
+    }
+}
+
+class Parent {
+    Parent() {
+        System.out.println("This is parent constructor");
+    }
+}
+
+class Child extends Parent {
+    Child() {
+        System.out.println("This is child constructor");
     }
 }
