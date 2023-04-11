@@ -13,15 +13,14 @@ public class BubbleSort1 {
     // Bubble sort is a stable sorting algorithm
     // * Time complexity - best case {O(n)}, worst case {O(n^2)}
     /*
-     * Space complexity- O(n) i.e no extra space required a.k.a inplace sorting
-     * algorithm
+     * Space complexity- O(1) i.e no extra space required a.k.a inplace sorting algorithm
      */
+    // * Working of Algorithm
     // 1. sort adjacent elements till n
     // 2. after the first pass the largest element will be at the end
     // 3. now sort adjacent elemets till n - 1
-    // 4. after the second pass the second largets element will be at the second
-    // last
-    // position
+    // 4. after the second pass the second larget element will be at the second
+    // last position
     // 5. keep on doing this until you get the result
 
     public static void bubbleSort(int[] arr) {
