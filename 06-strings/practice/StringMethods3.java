@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class stringMethods {
+public class StringMethods3 {
     public static void main(String[] args) {
         // Strings are immutable so these methods will not change the actual string but
         // will return a new refrence.

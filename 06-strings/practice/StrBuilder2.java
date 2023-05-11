@@ -1,4 +1,4 @@
-public class strBuilder {
+public class StrBuilder2 {
     public static void main(String[] args) {
         // every time we append anything to a string, a new object is created and the
         // previous string object is derefrenced which leads to wastage of memory.

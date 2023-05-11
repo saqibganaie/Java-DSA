@@ -14,7 +14,8 @@ public class Plindrome4 {
         if (inputStr == null || strLen == 0) {
             return true;
         }
-        String tempStr = inputStr.toLowerCase(); // to make the program case insensitive
+        String tempStr = inputStr.toLowerCase(); // to make the program case
+        // insensitive
         for (int i = 0; i <= strLen / 2; i++) {
             char start = tempStr.charAt(i);
             char end = tempStr.charAt(strLen - 1 - i);
@@ -24,4 +25,5 @@ public class Plindrome4 {
         }
         return true;
     }
+
 }
