@@ -16,7 +16,10 @@ public class File3 {
     // * There is repeated calculation in recursion so it is inefficient which can
     // be improved using dynamic programming.
     public static void main(String[] args) {
-        // System.out.println(fib(6));
+        // for (int i = 0; i < 6; i++) {
+
+        // System.out.println(fib(i));
+        // }
         int[] arr = { 1, 2, 3, 4, 5 };
         // System.out.println(binarySearch(arr, 4));
         System.out.println(recrusiveBS(arr, 6, 0, arr.length - 1));
