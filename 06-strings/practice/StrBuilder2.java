@@ -23,7 +23,7 @@ public class StrBuilder2 {
         }
         System.out.println(str);
         System.out.println(str.charAt(0));
-        str.delete(0, 2); // will delete from index 0 to 1 i.e a, b and c
+        str.delete(0, 2); // will delete from index 0 to 1 i.e a and b
         System.out.println(str);
     }
 }
