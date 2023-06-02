@@ -5,15 +5,16 @@ import java.util.Arrays;
 public class BubbleSort1 {
     public static void main(String[] args) {
         int[] nums = { 1, 2, -3, 4, -5, 0 };
-        bubbleSort(nums);
-        System.out.println(Arrays.toString(nums));
+        // bubbleSort(nums);
+        // System.out.println(Arrays.toString(nums));
     }
 
     // Bubble sort a.k.a sinking sort / exchange sort
     // Bubble sort is a stable sorting algorithm
     // * Time complexity - best case {O(n)}, worst case {O(n^2)}
     /*
-     * Space complexity- O(1) i.e no extra space required a.k.a inplace sorting algorithm
+     * Space complexity- O(1) i.e no extra space required a.k.a inplace sorting
+     * algorithm
      */
     // * Working of Algorithm
     // 1. sort adjacent elements till n

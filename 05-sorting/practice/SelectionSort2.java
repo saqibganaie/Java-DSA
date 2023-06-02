@@ -20,6 +20,7 @@ public class SelectionSort2 {
     // 2. put it in it's correct position by swapping it with the element at it's
     // correct position.
     // 3. repeat until you get a sorted array
+
     public static void seletionSort(int[] arr) {
         int size = arr.length;
         for (int i = 0; i < size; i++) {

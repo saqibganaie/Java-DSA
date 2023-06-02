@@ -11,7 +11,7 @@ public class InsertionSort3 {
     // Insertion sort is stable algorithm
     // * It is adaptive i.e steps get reduced if array is already sorted
     // * Number of swaps are reduced as compared to bubble sort
-    // Used for samll size lists
+    // Used for small size lists
     // * Works good with arrays that are partially sorted
     // It takes part in hybrid sorting algorithms
     // * Time complexity - best case {O(n)}, worst case {O(n^2)}
