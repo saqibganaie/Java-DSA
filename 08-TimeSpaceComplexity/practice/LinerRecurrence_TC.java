@@ -1,35 +1,64 @@
 public class LinerRecurrence_TC {
-    // * form : (Homogenous Recurrence Relation)
-    // f(x) = a1*f(x-1) + a2*f(x-2) + -------- + an*f(x-n)
-    // f(x) = summation(i=1 -> n)ai*f(x - i)
-    // * Solution
-    // 1. Put f(n) = α^n for some constant α {alpha} here n is the var inside
-    // brackett of f(n) so if we have f(n - 1) then n will be n - 1
-    // 2. Solve the equation for value of α
-    // 3. then the final equation with k number of roots will be
-    // f(n) = c1 * α1^n + c2 * α2^n + ----- + ck * αk^n
-    // 4. You will already be given the value of k number of values f(x).
-    // 5. By using these values you will find the values of constants (c1, c2 ---)
-    // 6. Put c1, c2 ----- and you will get the resultant equation i.e the time
-    // complexity in O{big Oh}.
-    // * Note : if there are r equal roots α then α^n , n*α^n, n^2 * α*n, ---------
-    // * , n^r-1 * α^n will all satisfy the equation hence will be the roots.
 
-    // * form: (Non - Homogeneous Recurrence Relation)
-    // f(x) = a1*f(x-1) + a2*f(x-2) + -------- + an*f(x-n) + g(x) { when there is
-    // g(x) another funciton in one function then it is non - homogeneous equation}
-    // * Solution
-    // 1. Replace g(n) by O{zero} and solve just like before till step 3 to find
-    // f(n)
-    // 2. After this take the initial equation and put all the f(n) terms on L.H.S
-    // and g(n) term on the R.H.S.
-    // 3. Guess the value of f(n) {which is usually some constant multiplied by g(n)
-    // term} and put it in the equation of step 2. {if first (constant) guess doesnt
-    // work then try replacing constant wiht a*n+b, if this also doesnt work then
-    // try a*n^2 + b*n+c and so on}
-    // 4. Now solve for till you get the value of constant which is in step 3 and
-    // put that value in f(n) which is in step 3.
-    // 5. Now, f(n) = value of f(n) in step 1 + value of f(n) in step 4.
-    // 6. solve f(n) in step 5 using the given f(1 or 2 or whatever) and find the
-    // final equation.
+    // * General form of recurrence relation:-
+
+    /*
+     * T(n) = a*T(n - b) + g(n)
+     */
+
+    // e.g -> T(n) = T(n - 1) + 1
+    // *Solve it by using substitution method
+    // *solution{
+    // T(n) = {
+    // 1 , n = 0
+    // T(n - 1) + 1, n > 0
+    // }
+    /*
+     * T(n) = T(n - 1) + 1
+     * T(n - 1) = T(n - 2) + 2
+     * T(n - 2) = T(n - 3) + 3
+     * ---
+     * ---
+     * now substitute the values of T(n - 1) , T(n - 2) ---- in T(n) and we get
+     * T(n) = T(n - k) + k
+     * assume n - k = 0
+     * n = k
+     * T(n) = T(0) + n
+     * T(n) = n + 1
+     * i.e T(n) = O(n) ans
+     */
+    // * }
+
+    // -------------------------------------------------------------
+
+    // * Solve this by Substitution method
+    // e.g -> T(n) = T(n - 1) + n
+    // T(n) = {
+    /*
+     * T(n) = T(n - 1) + n
+     * T(n - 1) = T(n - 2) + n - 1
+     * T(n - 2) = T(n - 3) + n - 2
+     * ----
+     * ----
+     * now put the above values in T(n) we get
+     * T(n) = T(n - k) + (n - (k - 1)) + (n - (k - 2)) ------- + (n - 1) + n
+     * assume n - k = 0
+     * n = k
+     * T(n) = T(0) + 1 + 2 + 3 ---- n
+     * T(n) = O(n^2) ans
+     */
+    // }
+
+    // * Note: The upper bound for n! is n^n so for O(log(n!)) it can be written as
+    // * O(nlogn)
+
+    // *** NOTE: for a reducing reccurence relation T(n) = T(n - 1) + g(n)
+    // ** you can directly write the time complexity as = n*g(n)
+    /*
+     * but in case of coefficient for T(n - 1) i.e a*T(n - 1) the time complexity
+     * is (a^n)*g(n)
+     */
+    // * Q. Solve the recurrence relation T(n) = 2T(n) - 1
+    // Do this for practice
+
 }
