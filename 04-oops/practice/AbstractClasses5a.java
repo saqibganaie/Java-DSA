@@ -1,4 +1,4 @@
-public class AbstractClasses5 {
+public class AbstractClasses5a {
     public static void main(String[] args) {
         Son son = new Son(10);
         son.carrer();
@@ -15,6 +15,7 @@ public class AbstractClasses5 {
     }
     // *NOTE: If a class contains atleast one abstract method then it should be
     // * declared abstract.
+    // An abstract class cannot be final because it needs to be extended
 }
 
 abstract class Parent {
@@ -28,10 +29,12 @@ abstract class Parent {
 
     // abstract Parent(){
     // } // * You cannot create abstract constructors
-    // * You cannot create abstract static methods
+    // * You cannot create abstract static methods because abstract methods need to
+    // be overridden but static methods cannot be overidden
 
     final void printIt() {
         System.out.println("Post it");
+
     }
 
     void message() {

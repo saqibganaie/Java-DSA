@@ -6,7 +6,7 @@ public class Car_Interfaces5b {
         c1.start();
         Engine_Interfaces5b c2 = new Car();
         c2.start();
-
+        c1.greet2();
         // c2.message(); // * cannot do this because we can only access those which are
         // * in Engine type.
     }
@@ -42,4 +42,5 @@ class Car implements Engine_Interfaces5b, Break_Interfaces5b, Media_Interfaces5b
     public void message() {
         System.out.println("Message from car");
     }
+
 }

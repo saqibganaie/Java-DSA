@@ -1,4 +1,4 @@
-public class Polymorphism_4b {
+public class Polymorphism_3b {
     // * Poly - means many
     // * morphism - means ways of doing tasks
     // * Polymorphism - means many ways of doing certain/same tasks
@@ -15,7 +15,7 @@ public class Polymorphism_4b {
      * ** Early Binding - When method call is resolved to its correspoinding method
      * implementation during compile time.
      * ** Late Binding - When method call is resolved to its corresponding method
-     * implementation during compile time.
+     * implementation during run time.
      */
 
     public static void main(String[] args) {

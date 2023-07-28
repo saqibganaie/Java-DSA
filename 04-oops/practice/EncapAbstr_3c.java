@@ -1,4 +1,4 @@
-public class EncapAbstr_4c {
+public class EncapAbstr_3c {
     // * Encaptulation - Wrapping up the implementation of the data members and
     // * methods in a class
 
