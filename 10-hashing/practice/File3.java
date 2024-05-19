@@ -161,7 +161,7 @@ class MyHashMap<K, V> { // using generics because we dont know the types
         return keys;
     }
 
-    // O(N)
+    // O(1)
     public boolean isEmpty() {
         return n == 0;
     }
