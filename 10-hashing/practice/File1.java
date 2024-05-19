@@ -34,7 +34,7 @@ public class File1 {
 
         boolean setHasElem = set.contains(10);
         if (setHasElem) {
-            System.out.println("Set contains the Element");
+            System.out.println("Set contains the Element"); 
         }
 
         // Deleting element
